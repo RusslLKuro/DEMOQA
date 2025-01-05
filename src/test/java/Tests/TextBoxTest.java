@@ -9,8 +9,10 @@ public class TextBoxTest extends BaseTest {
     public void positiveTest() {
         mainPage.open();
         elementsPage.clickTextBox();
-        textBox.submitClick("Test", "test@mail.ru", "test", "test");
-        driver.findElement(By.xpath("//div[@class='text-right col-md-2 col-sm-12']")).click();
+        elementsPage.submitClick("Test", "test@mail.ru", "test", "test");
+//        driver.findElement(By.xpath("//button[text()='Submit']")).click();
+
+
 
     }
 }
