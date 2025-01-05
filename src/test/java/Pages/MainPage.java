@@ -10,9 +10,14 @@ public class MainPage {
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
+    By elementsButton = By.cssSelector("[viewBox='0 0 448 512']");
 
     public void open() {
-        driver.get("https://demoqa.com/elements");
+        driver.get("https://demoqa.com");
+    }
+
+    public void clickElementButton() {
+        driver.findElement(elementsButton).click();
     }
 
 }

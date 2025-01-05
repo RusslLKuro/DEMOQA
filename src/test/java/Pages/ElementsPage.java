@@ -15,7 +15,9 @@ public class ElementsPage {
     By permanentAddressField = By.xpath("//*[@id='permanentAddress']");
 //    By submitButton = By.xpath("//button[text()='Submit']");
 //    By submitButton = By.id("submit");
-    By submitButton = By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[5]/div/button");
+//    By submitButton = By.xpath("/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[5]/div/button");
+//    By submitButton = By.cssSelector(".btn btn-primary");
+    By submitButton = By.cssSelector("#submit");
 
     public ElementsPage(WebDriver driver) {
         this.driver = driver;
