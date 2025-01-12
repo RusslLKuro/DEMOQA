@@ -26,6 +26,7 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         mainPage = new MainPage(driver);
         elementsPage = new ElementsPage(driver);
+
     }
 
 //    @AfterMethod(alwaysRun = true)
