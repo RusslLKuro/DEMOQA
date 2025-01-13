@@ -42,8 +42,6 @@ public class ElementsPage {
     By doubleMessage = By.xpath("//p[@id='doubleClickMessage']");
     By rightMessage = By.xpath("//p[@id='rightClickMessage']");
 
-
-
     public ElementsPage(WebDriver driver) {
         this.driver = driver;
         this.actions = new Actions(driver);
@@ -151,8 +149,4 @@ public class ElementsPage {
     public String getTextRightMessage() {
         return driver.findElement(rightMessage).getText();
     }
-
-
-
-
 }

@@ -19,5 +19,4 @@ public class MainPage {
     public void clickElementButton() {
         driver.findElement(elementsButton).click();
     }
-
 }
