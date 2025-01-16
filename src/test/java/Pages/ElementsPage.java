@@ -47,13 +47,12 @@ public class ElementsPage {
         this.actions = new Actions(driver);
     }
 
-    public void submitClick(String name, String email, String currentAddress, String permanentAddress) throws InterruptedException {
+    public void submitClick(String name, String email, String currentAddress, String permanentAddress) {
         driver.findElement(textBox).click();
         driver.findElement(fullNameField).sendKeys(name);
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(currentAddressField).sendKeys(currentAddress);
         driver.findElement(permanentAddressField).sendKeys(permanentAddress);
-        Thread.sleep(15000);
         driver.findElement(submitButton).click();
     }
 

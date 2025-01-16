@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class TextBoxTests extends BaseTest {
 
     @Test
-    public void positiveTest() throws InterruptedException {
+    public void positiveTest() {
         mainPage.open();
         mainPage.clickElementButton();
         elementsPage.submitClick("Test", "test@mail.ru", "test", "test");
@@ -19,7 +19,7 @@ public class TextBoxTests extends BaseTest {
     }
 
     @Test
-    public void wrongEmail() throws InterruptedException {
+    public void wrongEmail() {
         mainPage.open();
         mainPage.clickElementButton();
         elementsPage.submitClick("Test", "test", "test", "test");

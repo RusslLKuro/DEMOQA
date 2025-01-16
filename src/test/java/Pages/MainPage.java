@@ -10,7 +10,8 @@ public class MainPage {
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
-    By elementsButton = By.cssSelector("[viewBox='0 0 448 512']");
+
+    By elementsButton = By.xpath("//h5[text()='Elements']");
 
     public void open() {
         driver.get("https://demoqa.com");
