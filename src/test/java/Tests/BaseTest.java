@@ -27,8 +27,8 @@ public class BaseTest {
         elementsPage = new ElementsPage(driver);
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void dropdown() {
-//        driver.quit();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void dropdown() {
+        driver.quit();
+    }
 }
